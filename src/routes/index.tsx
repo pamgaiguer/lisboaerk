@@ -6,6 +6,7 @@ import PublicLayout from '../pages/public/components/layout/PublicLayout';
 import Home from '../pages/public/Home';
 
 const Error404 = lazy(() => import('../pages/Error404'));
+const Biography = lazy(() => import('../pages/Biography'));
 
 export default function Routes() {
   return (
@@ -20,7 +21,7 @@ export default function Routes() {
         {/* Public */}
         <Route path="/" element={<PublicLayout />}>
           <Route path="" element={<Home />} />
-          {/* <Route path="galharufa" element={<Galharufa />} /> */}
+          <Route path="bio" element={<Biography />} />
         </Route>
 
         {/* Not found */}
