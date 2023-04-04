@@ -3,10 +3,12 @@ import { Route } from 'react-router-dom';
 import { Center, Loader } from '@mantine/core';
 import { lazy, Suspense } from 'react';
 import PublicLayout from '../pages/public/components/layout/PublicLayout';
-import Home from '../pages/public/Home';
 
 const Error404 = lazy(() => import('../pages/Error404'));
-const Biography = lazy(() => import('../pages/Biography'));
+const Home = lazy(() => import('../pages/public/Home'));
+const Biography = lazy(() => import('../pages/public/Biography'));
+const Portfolio = lazy(() => import('../pages/public/Portfolio'));
+const Resume = lazy(() => import('../pages/public/Resume'));
 
 export default function Routes() {
   return (
@@ -22,6 +24,8 @@ export default function Routes() {
         <Route path="/" element={<PublicLayout />}>
           <Route path="" element={<Home />} />
           <Route path="bio" element={<Biography />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="resume" element={<Resume />} />
         </Route>
 
         {/* Not found */}

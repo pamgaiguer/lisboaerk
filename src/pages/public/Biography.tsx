@@ -1,7 +1,7 @@
 export default function Biography() {
   return (
     <>
-      <p>Home</p>
+      <p>Biography</p>
     </>
   );
 }
