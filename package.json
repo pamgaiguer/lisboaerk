@@ -37,8 +37,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\"",
+    "format": "prettier . --write",
     "start:dev": "env-cmd -f dev.env npm start",
-    "format": "prettier . --write"
+    "start:staging": "env-cmd -f dev.env npm start"
   },
   "browserslist": {
     "production": [
